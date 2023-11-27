@@ -77,7 +77,7 @@ const DetalleTarea = () => {
   const handleDeleteTask =async () => {
     try {
       if (taskId) {
-        await TaskService.deteleTask(parseInt(taskId, 10));
+        await TaskService.deleteTask(parseInt(taskId, 10));
         toast.success('Tarea eliminada correctamente', {
           position: toast.POSITION.TOP_RIGHT,
           autoClose: 2000,

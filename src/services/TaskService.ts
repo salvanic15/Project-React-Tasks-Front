@@ -27,7 +27,7 @@ export const TaskService = {
     },
 
     // Eliminar una tarea
-    deteleTask: async (id: number): Promise<void> => {
+    deleteTask: async (id: number): Promise<void> => {
         await fetch(`${BASE_URL}/${id}`, {
 
             method: 'DELETE',
