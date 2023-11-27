@@ -30,9 +30,6 @@ const CarouselHome = () => {
                     src="/assets/images/img3.jpg" alt="sl3" />
                 <Carousel.Caption>
                     <h3>Creacion de tareas por grupos de trabajo</h3>
-                    <p>
-                        Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-                    </p>
                 </Carousel.Caption>
             </Carousel.Item>
         </Carousel>
