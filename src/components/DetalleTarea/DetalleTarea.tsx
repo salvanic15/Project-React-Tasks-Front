@@ -42,7 +42,7 @@ const DetalleTarea = () => {
 
   //------ CAMBIAR ESTADO A UNA TAREA ----------
   const handleUpdateState = async () => {
-    if (estado ! == '') {
+    if (estado !== '') {
       try {
         const updatedTask = await TaskService.updateStateTask(parseInt(taskId!, 10), estado);
         // Actualiza la tarea local con la tarea actualizada
