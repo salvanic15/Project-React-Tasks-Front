@@ -58,7 +58,7 @@ export const TaskService = {
         const response = await fetch(`${BASE_URL}`, {
             method: 'POST',
             headers: {
-                "COntent-Type": "application/json"
+                "Content-Type": "application/json"
             },
             body: JSON.stringify(task)
         });
