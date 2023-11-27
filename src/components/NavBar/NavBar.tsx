@@ -102,5 +102,5 @@ const NavBar = () => {
 
   )
 }
-//me quede en video 1 min 8:26
+
 export default NavBar

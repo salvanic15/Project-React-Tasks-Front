@@ -6,6 +6,7 @@ import {BrowserRouter as Router} from 'react-router-dom'
 
 //Notificaciones al usuario
 import { ToastContainer } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const App = () => {
