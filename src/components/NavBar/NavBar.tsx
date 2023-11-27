@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { Navbar, Container, Nav, NavDropdown } from "react-bootstrap"
-import { Basket, Person } from "react-bootstrap-icons"
+import { Navbar, Container, Nav } from "react-bootstrap"
+import { Basket, Calendar2Check, Person } from "react-bootstrap-icons"
 import { useNavigate } from "react-router-dom"
 import { Task } from "../../types/Task";
 import { TaskService } from "../../services/TaskService";
@@ -48,7 +48,7 @@ const NavBar = () => {
     <>
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container>
-        <Navbar.Brand >My taks</Navbar.Brand>
+        <Navbar.Brand>My tasks<Calendar2Check className="m-2"/></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
 
@@ -57,13 +57,7 @@ const NavBar = () => {
             <Nav.Link onClick={() => navigate('/')}>Inicio</Nav.Link>
 
             
-            <NavDropdown title="Tareas" id="basic-nav-dropdown">
-              <NavDropdown.Item >Por hacer</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2"> En produccion</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Por testear</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4"> Completada</NavDropdown.Item>
-            </NavDropdown>
+          
 
             {/* ________AGREGAR TAREA________ */}
             <Nav.Link onClick={handleShowModal}>Agregar tarea</Nav.Link>
