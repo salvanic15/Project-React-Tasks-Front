@@ -18,15 +18,15 @@ const CategoriasSelector: React.FC<CategoriasSelectorProps> = ({onSelectedCatego
   
   
   return (
-    <section className='container mt-3' id='selector-categorias'>
-      <p>Seleccione una categoria</p>
-      <div className='row gap-4'>
+    <section className='container mt-5' id='selector-categorias'>
+      <h2>SELECCIONE UNA CATEGORIA:</h2>
+      <div className='row gap-4 mt-5'>
         {categorias.map((categoria, index)=> (
           <div className='col d-flex justify-content-center p-0' key={index}>
 
             <button 
             onClick={() => onSelectedCategory(categoria.nombre)}
-            className='border border-1 border-black d-flex ga-1 align-items-center rounderd p-1 text-decoration-none' style={{cursor: 'pointer'}}>{categoria.icono} {categoria.nombre}</button>
+            className='btn btn-primary border border-1 border-black d-flex ga-1 align-items-center rounded p-1 text-decoration-none' style={{cursor: 'pointer'}}>{categoria.icono} {categoria.nombre}</button>
 
           </div>
         ))}

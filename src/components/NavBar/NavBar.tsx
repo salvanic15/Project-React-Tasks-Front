@@ -46,9 +46,9 @@ const NavBar = () => {
 
   return (
     <>
-    <Navbar expand="lg" className="bg-body-tertiary">
+    <Navbar expand="lg" className="bg-body-tertiary fs-4">
       <Container>
-        <Navbar.Brand>My tasks<Calendar2Check className="m-2"/></Navbar.Brand>
+        <Navbar.Brand className="fs-3">My tasks<Calendar2Check className="m-2"/></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
 
